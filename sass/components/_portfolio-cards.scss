@@ -1,0 +1,93 @@
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.portfolio__card-set {
+    margin-left: 30px;
+    margin-top: 30px;
+flex-basis: calc(100% - 30px);
+    @media screen and (min-width:768px) {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+         @media screen and (min-width:1200px) {
+            flex-basis: calc(100% / 3 - 30px);
+         }
+    
+
+    transition-property: box-shadow;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+&:hover, &:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+.portfolio__overley {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__paragraf {
+    position: absolute;
+    width: 450px;
+    height: 294px;
+    
+    @media screen and (min-width:768px) {
+    width: 370px;
+    }
+
+    background: rgba(33, 150, 243, 0.9);
+    bottom: 0;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0px;
+
+    transform: translateY(100%);
+    transition: transform 250ms var(--transition-timing-function);
+
+    &:hover, &:focus{
+        transform: translateY(0%);
+    }
+}
+
+.portfolio__card-set:hover .portfolio__paragraf,
+.portfolio__card-set:focus .portfolio__paragraf {
+    transform: translateY(0%);
+}
+
+.portfolio__company {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.portfolio__work {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    margin: 0px;
+}
+
+.portfolio__description {
+    padding: 20px 24px 20px 24px;
+    border-left: #EEEEEE solid 1px;
+    border-right: #EEEEEE solid 1px;
+    border-bottom: #EEEEEE solid 1px;
+    background-color: #FFFFFF;
+}

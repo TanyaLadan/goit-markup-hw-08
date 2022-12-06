@@ -1,0 +1,17 @@
+@mixin btn ($bg-color:var(--accent), $color: var(--secondary-color), $font-weight: 700, $font-size: 16px, $line-height: 1.88, $letter-spacing: 0.06em,) {
+    display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: $bg-color;
+        color: $color;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: $font-weight;
+        font-size: $font-size;
+        line-height: $line-height;
+        border-radius: 4px;
+        border: none;
+        letter-spacing: $letter-spacing;
+}

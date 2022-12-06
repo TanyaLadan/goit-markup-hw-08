@@ -1,0 +1,26 @@
+.footer {
+    background: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer>.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+        align-items: baseline;
+
+
+    }
+}

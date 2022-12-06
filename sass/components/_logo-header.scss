@@ -1,0 +1,14 @@
+.logo{
+@include logo (#000000);
+
+@media screen and (min-width:768px) {
+        font-size: 26px;
+        line-height: 31px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    };
+}
+
+.logopart{
+@include logopart (var(--accent));
+}

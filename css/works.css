@@ -1,0 +1,55 @@
+.works {
+  background-color: #FFFFFF;
+}
+
+.works.section {
+  padding-top: 0px;
+}
+
+.works-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.list.works-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.list.works-list .list-li:not(:first-child) {
+  margin-left: 30px;
+  width: calc((100% - 60px) / 3);
+}
+
+.list-li {
+  position: relative;
+}
+
+.work-paragraf {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  margin: 0px;
+  color: #FFFFFF;
+  background: rgba(47, 48, 58, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}/*# sourceMappingURL=works.css.map */

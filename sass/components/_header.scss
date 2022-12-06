@@ -1,0 +1,10 @@
+.headers {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container-header {
+    @extend .container;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
