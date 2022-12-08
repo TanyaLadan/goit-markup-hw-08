@@ -573,7 +573,7 @@ img {
 .team__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.77px;
+  line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -1272,12 +1272,17 @@ img {
 
 .agree {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0px;
   padding-left: 8.38px;
+}
+@media screen and (min-width: 1200px) {
+  .agree {
+    font-size: 14px;
+  }
 }
 
 .checkt-icon {
@@ -1359,8 +1364,6 @@ img {
   }
 }
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1369,9 +1372,6 @@ img {
   padding: 0;
   cursor: pointer;
   border: none;
-  position: absolute;
-  top: 16px;
-  right: 16px;
   color: #fff;
   -webkit-transition-property: fill;
   transition-property: fill;
